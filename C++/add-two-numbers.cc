@@ -76,8 +76,8 @@ private:
 
 
         for (int i = 0; i < size; i++) {
-            element1 = i<v1_size ? v1[v1_size-1-i] : 0;
-            element2 = i<v2_size ? v2[v2_size-1-i] : 0;
+            element1 = i<v1_size ? v1[i] : 0;
+            element2 = i<v2_size ? v2[i] : 0;
 
             sum_res = addTwoDigit(element1, element2, sum_res.carry);
             ret.push_back(sum_res.val);
@@ -113,4 +113,36 @@ private:
         }
         return ret;
     }
+};
+
+class Solution2{
+    public:
+        ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+            int carry = 0;
+
+            ListNode* ret
+
+            while(l1 != nullptr || l2!=nullptr){
+                int sum =carry;
+
+            if (l1 != nullptr) {
+                sum = sum+ l1->val;
+                l1 = l1->next;
+            }
+            if (l2 != nullptr) {
+                sum = sum+ l2->val;
+                l1 = l2->next;
+            }
+
+                if (sum>=10){
+                    sum = sum-10;
+                    carry=1;
+                }
+                else{
+                    carry=0;
+                }
+
+
+            }
+        }
 };
