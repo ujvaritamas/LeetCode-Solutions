@@ -15,7 +15,8 @@
 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./C++/add-two-numbers.cc) | Medium         |||
 3 | [Reverse integers](https://leetcode.com/problems/reverse-integer/) | [C++](./C++/reverse-integers.cc) | Medium         |||
 4 | [Median of two sorted array](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [C++](./C++/medianOfTwoSortedArray.cc) | Hard         |||
-5 | [String to Integer](https://leetcode.com/problems/string-to-integer-atoi/) | [C++](./C++/stringToInt.cc) | Medium
+5 | [String to Integer](https://leetcode.com/problems/string-to-integer-atoi/) | [C++](./C++/stringToInt.cc) | Medium         |||
+6 | [TODO: Merge k sorted list](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [C++](./C++/mergeKSortedList.cc) | Hard (not finished)
 
 ## Python
 |  #  | Title           |  Solution           |  Difficulty    | Note| 
