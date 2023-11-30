@@ -13,7 +13,8 @@
 |-----|---------------- | --------------- | --------------- |-----|
 1 | [Two Sum](https://leetcode.com/problems/two-sum/description/) | [C++](./C++/two-sum.cpp) | Easy         |||
 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./C++/add-two-numbers.cc) | Medium         |||
-3 | [Reverse integers](https://leetcode.com/problems/reverse-integer/) | [C++](./C++/reverse-integers.cc) | Medium
+3 | [Reverse integers](https://leetcode.com/problems/reverse-integer/) | [C++](./C++/reverse-integers.cc) | Medium         |||
+3 | [Median of two sorted array](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [C++](./C++/medianOfTwoSortedArray.cc) | Hard
 
 ## Python
 |  #  | Title           |  Solution           |  Difficulty    | Note| 
