@@ -71,6 +71,7 @@ ListNode* Solution::insertList(ListNode* rootNode, ListNode* insertElements){
 
     while(insertElements){
         cout<<"insert element: "<<insertElements->val<<endl;
+        ListNode* nextToAdd = insertElements->next;
         while(curNode){
             cout<<"current element: "<<curNode->val<<endl;
             //bigger than the current or equal
@@ -78,9 +79,10 @@ ListNode* Solution::insertList(ListNode* rootNode, ListNode* insertElements){
                 if(curNode->next){
                     //smaller than the next
                     if(curNode->next->val > insertElements->val){
-                        ListNode* node = new ListNode(insertElements->val);
-                        insertNode(curNode, node);
+                        //ListNode* node = new ListNode(insertElements->val);
+                        insertNode(curNode, insertElements);
                         curNode = curNode->next;
+                        insertElements = nextToAdd;
                         break;
                     }
                     else{
@@ -89,8 +91,7 @@ ListNode* Solution::insertList(ListNode* rootNode, ListNode* insertElements){
                     }
                 }
                 else{
-                    ListNode* node = new ListNode(insertElements->val);
-                    insertNode(curNode, node);
+                    insertNode(curNode, insertElements);
                     curNode = curNode->next;
                     break;
                 }
@@ -98,7 +99,7 @@ ListNode* Solution::insertList(ListNode* rootNode, ListNode* insertElements){
             curNode = curNode->next;
 
         }
-        insertElements = insertElements->next;
+        insertElements = nextToAdd;
     }
     return rootNode;
 }
