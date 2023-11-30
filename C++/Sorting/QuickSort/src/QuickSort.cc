@@ -18,10 +18,6 @@ void QuickSort::printArray(int array[], int size) {
     std::cout << std::endl;
 }
 
-void QuickSort::display(){
-    std::cout<<"Quicksort display"<<std::endl;
-}
-
 
 
 int QuickSort::partition(int array[], int low, int high) {
