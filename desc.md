@@ -16,7 +16,8 @@
 3 | [Reverse integers](https://leetcode.com/problems/reverse-integer/) | [C++](./C++/reverse-integers.cc) | Medium         |||
 4 | [Median of two sorted array](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [C++](./C++/medianOfTwoSortedArray.cc) | Hard         |||
 5 | [String to Integer](https://leetcode.com/problems/string-to-integer-atoi/) | [C++](./C++/stringToInt.cc) | Medium         |||
-6 | [TODO: Merge k sorted list](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [C++](./C++/mergeKSortedList.cc) | Hard (not finished)
+6 | [Merge k sorted list](https://leetcode.com/problems/merge-k-sorted-lists/description/) | [C++](./C++/mergeKSortedList.cc) | Hard         |||
+6 | [Minimum height trees](https://leetcode.com/problems/minimum-height-trees/description/) | [C++](./C++/min_height_tree.cc) | Medium
 
 ## Python
 |  #  | Title           |  Solution           |  Difficulty    | Note| 
