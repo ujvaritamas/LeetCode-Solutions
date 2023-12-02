@@ -9,5 +9,5 @@ debug:
 clean:
 	docker kill test_cpp_cont
 	docker image rm -f test_cpp
-	docker container rm -f test_cpp
+	docker container rm -f test_cpp_cont
 	docker image prune -a; docker system prune -a --volumes;
