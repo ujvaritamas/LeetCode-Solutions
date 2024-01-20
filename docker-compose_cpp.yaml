@@ -1,0 +1,8 @@
+services:
+  test_leetcode_cpp:
+    build:
+      context: .
+      target: cpp_test
+    volumes:
+      - .:/code
+    container_name: test_leetcode_cpp

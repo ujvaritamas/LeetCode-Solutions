@@ -24,3 +24,9 @@
 |-----|---------------- | --------------- | --------------- |-----|
 3 | [Longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [Python](./Python/long_substring_without_rep_char.py) | Medium
 
+## Java
+
+## C#
+|  #  | Title           |  Solution           |  Difficulty    | Note| 
+|-----|---------------- | --------------- | --------------- |-----|
+9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Python](./C#/PalindromeNumber.cs) | Easy

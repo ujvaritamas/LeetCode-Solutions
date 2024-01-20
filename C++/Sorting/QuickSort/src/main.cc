@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Quicksort.hh"
+#include "QuickSort.hh"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
