@@ -22,7 +22,9 @@
 ## Python
 |  #  | Title           |  Solution           |  Difficulty    | Note| 
 |-----|---------------- | --------------- | --------------- |-----|
-3 | [Longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [Python](./Python/long_substring_without_rep_char.py) | Medium
+3 | [Longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | [Python](./Python/long_substring_without_rep_char.py) | Medium         |||
+5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | [Python](./Python/longest_palindrome_substring.py) | Medium         |||
+
 
 ## Java
 
