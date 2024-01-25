@@ -31,4 +31,4 @@
 ## C#
 |  #  | Title           |  Solution           |  Difficulty    | Note| 
 |-----|---------------- | --------------- | --------------- |-----|
-9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [Python](./C#/PalindromeNumber.cs) | Easy
+9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C#](./C#/PalindromeNumber.cs) | Easy
