@@ -27,6 +27,7 @@
 
 
 ## Java
+6 | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/description/) | [Java](Java/ZigZagConv.java) | Medium         |||
 
 ## C#
 |  #  | Title           |  Solution           |  Difficulty    | Note| 
