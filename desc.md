@@ -33,3 +33,8 @@
 |  #  | Title           |  Solution           |  Difficulty    | Note| 
 |-----|---------------- | --------------- | --------------- |-----|
 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C#](./CSharp/PalindromeNumber.cs) | Easy
+
+##Golang
+|  #  | Title           |  Solution           |  Difficulty    | Note| 
+|-----|---------------- | --------------- | --------------- |-----|
+21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [Golang](./Golang/mergeSortedlists.go) | Easy
