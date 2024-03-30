@@ -3,52 +3,36 @@ package main
 import (
 	"fmt"
 	"sort"
-	"strconv"
 )
-
-func isStored(stored *[][]int, data []int) bool {
-
-	if len(*stored) == 0 {
-		return false
-	}
-
-	for _, dataStored := range *stored {
-		ret := true
-		for i := 0; i < len(dataStored); i++ {
-			if dataStored[i] != data[i] {
-				ret = false
-			}
-		}
-
-		if ret {
-			return ret
-		}
-	}
-	return false
-}
-
-func isStoredFaster(storedData *[]string, data string) bool {
-	for _, stored := range *storedData {
-		if stored == data {
-			return true
-		}
-	}
-
-	*storedData = append(*storedData, data)
-	return false
-}
 
 func fourSum(nums []int, target int) [][]int {
 	sort.Ints(nums)
 
 	var ret [][]int
 
-	var storedData []string
+	seen := make(map[[4]int]bool)
+	size := len(nums)
 
-	for i := 0; i < len(nums)-3; i++ {
-		for j := i + 1; j < len(nums)-2; j++ {
+	for i := 0; i < size-3; i++ {
+
+		if i != 0 && nums[i] == nums[i-1] {
+			continue
+		}
+		//optimalization
+		temp_sum_left := nums[i] + nums[i+1] + nums[i+2] + nums[i+3]
+		temp_sum_right := nums[i] + nums[size-3] + nums[size-2] + nums[size-1]
+
+		if temp_sum_left > target {
+			break
+		}
+
+		if temp_sum_right < target {
+			continue
+		}
+
+		for j := i + 1; j < size-2; j++ {
 			left := j + 1
-			right := len(nums) - 1
+			right := size - 1
 
 			for left < right {
 				sum := nums[i] + nums[j] + nums[left] + nums[right]
@@ -57,14 +41,13 @@ func fourSum(nums []int, target int) [][]int {
 				} else if sum > target {
 					right--
 				} else {
-					dataToAppend := []int{nums[i], nums[j], nums[left], nums[right]}
-					//sort.Ints(dataToAppend)
-					//if !isStored(&ret, dataToAppend) {
-					if !isStoredFaster(&storedData, strconv.Itoa(dataToAppend[0])+strconv.Itoa(dataToAppend[1])+strconv.Itoa(dataToAppend[2])+strconv.Itoa(dataToAppend[3])) {
-						//fmt.Println(strconv.Itoa(dataToAppend[0]) + strconv.Itoa(dataToAppend[1]) + strconv.Itoa(dataToAppend[2]) + strconv.Itoa(dataToAppend[3]))
-						ret = append(ret, dataToAppend)
+					dataToAppend := [4]int{nums[i], nums[j], nums[left], nums[right]}
+					if !seen[dataToAppend] {
+						ret = append(ret, []int{nums[i], nums[j], nums[left], nums[right]})
+						seen[dataToAppend] = true
 					}
 					left++
+					right--
 				}
 			}
 		}
@@ -82,4 +65,6 @@ func main() {
 	fmt.Println(fourSum([]int{1, 0, -1, 0, -2, 2}, 0))
 
 	fmt.Println(fourSum([]int{-4, -3, -2, -1, 0, 0, 1, 2, 3, 4}, 0))
+
+	fmt.Println(fourSum([]int{0, 4, -5, 2, -2, 4, 2, -1, 4}, 12))
 }
