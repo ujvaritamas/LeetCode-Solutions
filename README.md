@@ -40,3 +40,4 @@ Leetcode Problem Solutions
 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | [Golang](./Golang/removeNthNode.go) | Medium         |||
 28 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/) | [Golang](./Golang/firstOccurrenceStr.go) | Easy         |||
 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/) | [Golang](./Golang/devideTwoIntegers.go) | Medium         |||
+24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) | [Golang](./Golang/swapNodepairs.go) | Medium         |||
