@@ -41,3 +41,4 @@ Leetcode Problem Solutions
 28 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/) | [Golang](./Golang/firstOccurrenceStr.go) | Easy         |||
 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/) | [Golang](./Golang/devideTwoIntegers.go) | Medium         |||
 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) | [Golang](./Golang/swapNodepairs.go) | Medium         |||
+35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) | [Golang](./Golang/search_insert_position/main.go) | Easy         |||
